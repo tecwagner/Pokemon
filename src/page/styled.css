@@ -1,0 +1,62 @@
+.footer {    
+    background-color: #7c7979;
+    padding: 48px;   
+}
+
+.header {
+
+    background-color: #3a662e;
+}
+
+.header .title {
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+}
+
+.header .search-header{
+    border: 1px;
+    border-radius: 5px;
+    /* padding: 10px 30px; */
+    /* align-content: center; */
+    background-color: #e2e1e1;
+}
+
+.SearchIcon {
+    display: flex;
+    justify-content: center;
+    background-color: darkgray;
+    border: 1px;
+    border-radius: 5px;
+    height: 48px;
+}
+
+/* Card */
+
+.cardGrid {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    max-width: 960px
+}
+
+.card {
+    height: 100%;
+    display: 'flex';
+    flex-direction: 'column';
+}
+
+.cardMedia {
+    padding-top: 100%;
+}
+
+.cardContent {
+    flex-grow: 1;
+    background-color: #cccccc;
+}
+
+/* Card */
+
+.filter {
+    /* margin-top: 56.25%; */
+    width: 430px;
+}
