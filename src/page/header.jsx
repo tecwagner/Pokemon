@@ -1,6 +1,6 @@
 import React from 'react'
 import './styled.css'
-import Search from '../component/search'
+// import Search from '../component/search'
 
 import Toolbar from '@material-ui/core/Toolbar';
 import AppBar from '@material-ui/core/AppBar';
@@ -12,9 +12,9 @@ const Header = () => (
             <Typography className='title' variant="h6" color="inherit" noWrap>
                 Pokemon
             </Typography>
-            <Typography className='search-header'>
+            {/* <Typography className='search-header'>
                 < Search />
-            </Typography>
+            </Typography> */}
         </Toolbar>
 
     </AppBar>

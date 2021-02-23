@@ -14,29 +14,29 @@
     width: 500px;
 }
 
-.header .search-header{
+.search-header{
     border: 1px;
     border-radius: 5px;
-    /* padding: 10px 30px; */
-    /* align-content: center; */
+    padding: 10px 30px;
+    align-content: center;
     background-color: #e2e1e1;
+    position: absolute;
 }
 
-.SearchIcon {
+/* .SearchIcon {
     display: flex;
     justify-content: center;
     background-color: darkgray;
     border: 1px;
     border-radius: 5px;
     height: 48px;
-}
+} */
 
 /* Card */
 
 .cardGrid {
     padding-top: 64px;
     padding-bottom: 64px;
-    max-width: 960px
 }
 
 .card {
@@ -54,9 +54,53 @@
     background-color: #cccccc;
 }
 
+.cardAction {
+    justify-content: center;
+}
+
+.cardAction .button-perfil {
+    text-decoration:none;
+    background-color: #68d668;
+    
+}
 /* Card */
 
 .filter {
     /* margin-top: 56.25%; */
     width: 430px;
+}
+
+.button {
+    padding-top: 64px;   
+}
+
+.button-anterior {    
+    right: 60px;
+}
+.button-proximo {
+    left: 60px;
+}
+
+.table {
+    Width: 700;
+    height: 500
+  }
+
+.heading {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.button-sair {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.heroContent {
+    padding-top: 20px;
+    background-color: #b3b3b3;
+    height: 150px;
+    width: 100%;
+    display: flex ;
+    justify-content: flex-end;
 }

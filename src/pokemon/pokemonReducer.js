@@ -2,7 +2,9 @@
 /* eslint-disable default-case */
 
 const INITIAL_STATE = {
-    result: []
+    result: [],
+    details: '',
+    region: null
 }
 
 export default (state = INITIAL_STATE, action) => {
@@ -13,6 +15,17 @@ export default (state = INITIAL_STATE, action) => {
                 ...state,
                 result: action.payload
             }
+        case 'POKEMON_DETAILS_REQUEST':
+            return {
+                ...state,
+                details: action.payload
+            }
+        case 'POKEMON_REGION_REQUEST':
+            return {
+                ...state,
+                region: action.payload
+            }    
+        default:
     }
     return state
 }
