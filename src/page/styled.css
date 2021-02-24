@@ -5,34 +5,8 @@
 
 .header {
 
-    background-color: #3a662e;
+    background-color: #a0f072;
 }
-
-.header .title {
-    display: flex;
-    justify-content: flex-start;
-    width: 500px;
-}
-
-.search-header{
-    border: 1px;
-    border-radius: 5px;
-    padding: 10px 30px;
-    align-content: center;
-    background-color: #e2e1e1;
-    position: absolute;
-}
-
-/* .SearchIcon {
-    display: flex;
-    justify-content: center;
-    background-color: darkgray;
-    border: 1px;
-    border-radius: 5px;
-    height: 48px;
-} */
-
-/* Card */
 
 .cardGrid {
     padding-top: 64px;
@@ -63,11 +37,26 @@
     background-color: #68d668;
     
 }
-/* Card */
 
 .filter {
     /* margin-top: 56.25%; */
-    width: 430px;
+    width: 150px;
+}
+
+.search{
+    width: 100%;
+    height: 30px;
+    border: 1px;
+    border-radius: 5px;
+    background-color: #e0e0e0;  
+}
+
+.containerFilter {
+    margin-top: 20px;
+    align-content: center;
+    width: 100%;
+    height: 30px;
+
 }
 
 .button {

@@ -21,8 +21,7 @@ import Grid from '@material-ui/core/Grid';
 const TableDetails = (props) => {
 
     useEffect(async () => {
-        await props.getDetailPokemon(props.match.params.name)
-        //verificar os dados de cada pokemon        
+        await props.getDetailPokemon(props.match.params.name)    
     }, [])
 
     const { id, name, height, weight } = props.details;
@@ -61,15 +60,15 @@ const TableDetails = (props) => {
                                     <TableHead>                                       
                                         <TableRow>
                                             <TableCell><strong>Habilidades:</strong></TableCell>
-                                            {props.details.abilities.map(row => (                                         
+                                            {props.details.abilities ? props.details.abilities.map(row => (                                         
                                                <TableCell align="center">{row.ability.name}</TableCell>
-                                            ))} 
+                                            )) : 'Dados não encontrado'} 
                                         </TableRow>
                                     </TableHead>                                 
                                 </Table>
                             </TableContainer>
                             <Grid className='button-sair'>
-                                <Link to={`/`}>
+                                <Link to={`/`} style={{ color: 'inherit', textDecoration: 'inherit'}}>
                                     <Button size="small" variant="contained" color="secondary" >
                                         Voltar
                                     </Button>

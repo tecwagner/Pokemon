@@ -1,13 +1,12 @@
 import { combineReducers } from 'redux'
 
-//criado um reducer expecifico
 import PokemonReducer from '../pokemon/pokemonReducer'
+import RegiaoReducer from '../regioes/regioesReducer'
 
-//Aplicação que ira concatenar os reducer
 const rootReducer = combineReducers({
     
-    //Dados vindo do Back, passado  pelo reducer  (Responsavel por enviar)
-    pokemon: PokemonReducer
+    pokemon: PokemonReducer,
+    regiao: RegiaoReducer
    
 })
 

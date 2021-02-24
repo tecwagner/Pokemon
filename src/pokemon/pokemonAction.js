@@ -1,6 +1,5 @@
 import axios from 'axios'
 const URL = `https://pokeapi.co/api/v2/pokemon/`
-const URL_REGION = `https://pokeapi.co/api/v2/region/`
 
 export const getPokemon = async (page) => {
     
@@ -24,16 +23,5 @@ export const getDetailPokemon = async (name) => {
         }
     } catch (error) {
         return console.log(error) 
-    }
-}
-
-export const getRegionPokemon = async () => {
-    
-    const request = await axios.get(`${URL_REGION}`)
-    
-    // console.log('act3', request)    
-    return {
-        type: 'POKEMON_REGION_REQUEST',
-        payload: request.data
     }
 }
